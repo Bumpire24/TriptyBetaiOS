@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		57F2A01E1F7677530012A1C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F2A01D1F7677530012A1C5 /* AppDelegate.m */; };
-		57F2A0211F7677530012A1C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F2A0201F7677530012A1C5 /* ViewController.m */; };
 		57F2A0241F7677530012A1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F2A0221F7677530012A1C5 /* Main.storyboard */; };
 		57F2A0271F7677530012A1C5 /* TriptyBeta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57F2A0251F7677530012A1C5 /* TriptyBeta.xcdatamodeld */; };
 		57F2A0291F7677530012A1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F2A0281F7677530012A1C5 /* Assets.xcassets */; };
@@ -39,8 +38,6 @@
 		57F2A0191F7677530012A1C5 /* TriptyBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriptyBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F2A01C1F7677530012A1C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57F2A01D1F7677530012A1C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		57F2A01F1F7677530012A1C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		57F2A0201F7677530012A1C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		57F2A0231F7677530012A1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57F2A0261F7677530012A1C5 /* TriptyBeta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TriptyBeta.xcdatamodel; sourceTree = "<group>"; };
 		57F2A0281F7677530012A1C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,16 +100,9 @@
 		57F2A01B1F7677530012A1C5 /* TriptyBeta */ = {
 			isa = PBXGroup;
 			children = (
-				57F2A01C1F7677530012A1C5 /* AppDelegate.h */,
-				57F2A01D1F7677530012A1C5 /* AppDelegate.m */,
-				57F2A01F1F7677530012A1C5 /* ViewController.h */,
-				57F2A0201F7677530012A1C5 /* ViewController.m */,
-				57F2A0221F7677530012A1C5 /* Main.storyboard */,
-				57F2A0281F7677530012A1C5 /* Assets.xcassets */,
-				57F2A02A1F7677530012A1C5 /* LaunchScreen.storyboard */,
-				57F2A02D1F7677530012A1C5 /* Info.plist */,
-				57F2A02E1F7677530012A1C5 /* main.m */,
-				57F2A0251F7677530012A1C5 /* TriptyBeta.xcdatamodeld */,
+				57F2A0541F768D210012A1C5 /* Source */,
+				57F2A0531F768CEF0012A1C5 /* Supporting Files */,
+				57F2A0521F76854B0012A1C5 /* Resources */,
 			);
 			path = TriptyBeta;
 			sourceTree = "<group>";
@@ -133,6 +123,51 @@
 				57F2A0451F7677540012A1C5 /* Info.plist */,
 			);
 			path = TriptyBetaUITests;
+			sourceTree = "<group>";
+		};
+		57F2A0521F76854B0012A1C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57F2A0221F7677530012A1C5 /* Main.storyboard */,
+				57F2A02A1F7677530012A1C5 /* LaunchScreen.storyboard */,
+				57F2A0281F7677530012A1C5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57F2A0531F768CEF0012A1C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57F2A02D1F7677530012A1C5 /* Info.plist */,
+				57F2A02E1F7677530012A1C5 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57F2A0541F768D210012A1C5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				57F2A0561F768D420012A1C5 /* Data */,
+				57F2A0551F768D2E0012A1C5 /* Modules */,
+				57F2A01C1F7677530012A1C5 /* AppDelegate.h */,
+				57F2A01D1F7677530012A1C5 /* AppDelegate.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		57F2A0551F768D2E0012A1C5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		57F2A0561F768D420012A1C5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				57F2A0251F7677530012A1C5 /* TriptyBeta.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57F2A0211F7677530012A1C5 /* ViewController.m in Sources */,
 				57F2A01E1F7677530012A1C5 /* AppDelegate.m in Sources */,
 				57F2A02F1F7677530012A1C5 /* main.m in Sources */,
 				57F2A0271F7677530012A1C5 /* TriptyBeta.xcdatamodeld in Sources */,
@@ -435,11 +469,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TriptyBeta/Info.plist;
+				INFOPLIST_FILE = "TriptyBeta/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tripty.TriptyBeta.TriptyBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,11 +482,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TriptyBeta/Info.plist;
+				INFOPLIST_FILE = "TriptyBeta/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tripty.TriptyBeta.TriptyBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
